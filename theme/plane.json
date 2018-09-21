@@ -586,7 +586,8 @@
                 "wildcard.comment"
             ],
             "settings": {
-                "foreground": "#D8E4FC75"
+                "foreground": "#D8E4FC75",
+                "fontStyle": "italic"
             }
         },
         {
