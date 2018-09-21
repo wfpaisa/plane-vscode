@@ -155,15 +155,16 @@ colors:
   editorGroupHeader.noTabsBackground:                                           # Background color of the editor group title header when Tabs are disabled
   editorGroupHeader.tabsBackground: *BGDark                                     # Background color of the Tabs container
   editorGroupHeader.tabsBorder:                                                 # Border color of the editor group title header when tabs are enabled. Editor groups are the containers of editors
-  tab.activeBackground: *BG                                                     # Active Tab background color
+  tab.activeBackground: *BGDark                                                 # Active Tab background color
   tab.activeForeground: *FG                                                     # Active Tab foreground color in an active group
-  tab.border: *BGDarker                                                         # Border to separate Tabs from each other
-  tab.activeBorder: *BG                                                         # A border drawn to the bottom of the active tab
+  tab.border: *BGDark                                                           # Border to separate Tabs from each other
+  tab.activeBorder: *BGSELECT                                                   # A border drawn to the bottom of the active tab
   tab.unfocusedActiveBorder:                                                    # A border drawn to the bottom of the active tab in an editor group that is not focused
   tab.inactiveBackground: *BGDark                                               # Inactive Tab background color
   tab.inactiveForeground: *COMMENT                                              # Inactive Tab foreground color in an active group
   tab.unfocusedActiveForeground:                                                # Active tab foreground color in an inactive editor group
   tab.unfocusedInactiveForeground:                                              # Inactive tab foreground color in an inactive editor group
+  tab.hoverBackground: !alpha [ *WHITE, 10 ]
 
   # Editor Colors
   editor.foreground: *FG
