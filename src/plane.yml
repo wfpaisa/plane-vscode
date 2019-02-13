@@ -3,38 +3,38 @@ author: wfpaisa
 semanticClass: theme.plane
 plane:
   base:
-    - &BG        '#1F2228'
-    - &FG        '#F8F8F2'
+    - &BG        '#1D2026'
+    - &FG        '#EFF8FF'
     - &SELECTION '#FFFFFF12'
     - &COMMENT   '#D8E4FC75'
-    - &CYAN      '#A0DFFF'
-    - &GREEN     '#71F2C3'
+    - &CYAN      '#8EDFFF'
+    - &GREEN     '#72F9C8'
     - &ORANGE    '#FF9A78'
-    - &PINK      '#FF87BF'
-    - &PURPLE    '#B59DDB'
+    - &PINK      '#FF84BD'
+    - &PURPLE    '#BDA2E8'
     - &RED       '#FF1A72'
-    - &YELLOW    '#FFF6B2'
+    - &YELLOW    '#FFF6B5'
   ansi:
-    - &COLOR0        '#2A2D35'
-    - &COLOR1        '#FF1A72'
-    - &COLOR2        '#71F2C3'
-    - &COLOR3        '#FFF6B2'
-    - &COLOR4        '#B59DDB'
-    - &COLOR5        '#FF87BF'
-    - &COLOR6        '#A0DFFF'
-    - &COLOR7        '#F8F8F2'
-    - &COLOR8        '#6272A4'
-    - &COLOR9        '#FF6E6E'
-    - &COLOR10       '#69FF94'
-    - &COLOR11       '#FFFFA5'
-    - &COLOR12       '#D6ACFF'
-    - &COLOR13       '#FF92DF'
-    - &COLOR14       '#A4FFFF'
-    - &COLOR15       '#FFFFFF'
+    - &COLOR0        '#2A2D35' # Black
+    - &COLOR1        '#FF84BD' # Red
+    - &COLOR2        '#72F9C8' # Green
+    - &COLOR3        '#FFF6B5' # Yellow
+    - &COLOR4        '#8EDFFF' # Blue
+    - &COLOR5        '#BDA2E8' # Magenta
+    - &COLOR6        '#8EDFFF' # Cyan
+    - &COLOR7        '#EFF8FF' # White
+    - &COLOR8        '#343841' # Bright Black 
+    - &COLOR9        '#FF1A72' # Bright Red
+    - &COLOR10       '#37E888' # Bright Green
+    - &COLOR11       '#FFEF7C' # Bright Yellow
+    - &COLOR12       '#2990FA' # Bright Blue
+    - &COLOR13       '#8750DE' # Bright Magenta
+    - &COLOR14       '#2990FA' # Bright Cyan
+    - &COLOR15       '#FFFFFF' # Bright White
   brightOther:
     # Temporary (awaiting fix)
-    - &TEMP_QUOTES          '#E9F284'
-    - &TEMP_PROPERTY_QUOTES '#8BE9FE'
+    - &TEMP_QUOTES          '#FFF6B5'
+    - &TEMP_PROPERTY_QUOTES '#8EDFFF'
   other:
     - &LineHighlight '#FFFFFF15'
     - &NonText       '#424450'
@@ -621,14 +621,6 @@ tokenColors:
 # Entities
 # =============================================================================
 
-  - name: HTML tags
-    scope:
-    - entity.name.tag
-    - punctuation.definition.tag.begin.html
-    - punctuation.definition.tag.end.html
-    settings:
-      foreground: *PINK
-
   - name: CSS attribute parent selectors ('&')
     scope:
     - entity.other.attribute-name.parent-selector
@@ -658,7 +650,7 @@ tokenColors:
     - support.function.any-method.lua
     - keyword.operator.function.infix
     settings:
-      foreground: *GREEN
+      foreground: *CYAN
 
   - name: Function parameters
     scope:
@@ -735,6 +727,7 @@ tokenColors:
     - support.function
     - support.type.property-name
     settings:
+      foreground: *FG
       fontStyle: normal
 
 # =============================================================================
@@ -1083,24 +1076,45 @@ tokenColors:
     settings:
       foreground: *COMMENT
 
-  # JSX
-  # =======
 
-  # Edge Cases
+  # JSX
   # ==========
   - name: Edge cases (foreground color resets)
     scope:
     - punctuation.section.embedded.begin.jsx
     - punctuation.section.embedded.end.jsx
+    - support.type.vendored.property-name.css
     settings:
       foreground: *FG
 
-  # html
-  # ==========
-  - name: html
+  - name: Control
     scope:
-    - support.class.component.open.jsx
-    - support.class.component.close.jsx
+    # - support.class.component.open.jsx
+    # - support.class.component.close.jsx
     - meta.tag.jsx
+    - entity.name.tag
+    - punctuation.definition.tag.begin.html
+    - punctuation.definition.tag.end.html
+    - keyword.control.at-rule.viewport.css
+    - entity.other.attribute-name.class.css
+    # - punctuation.definition.keyword.css
+    # - keyword.control.at-rule.media.css
+    # - keyword.operator.logical.and.media.css
     settings:
-      foreground: *PINK
+      foreground: *CYAN
+
+  # CSS
+  # ==========
+  - name: Meta property
+    scope:
+    - meta.property-value.css
+    settings:
+      foreground: *PURPLE
+
+  # JAVASCRIPT
+  # ==========
+  - name: Imports
+    scope:
+    - keyword.control.module.js
+    settings:
+      foreground: *GREEN
