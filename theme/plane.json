@@ -6,7 +6,7 @@
         "base": [
             "#1F2228",
             "#F8F8F2",
-            "#363a46",
+            "#FFFFFF12",
             "#D8E4FC75",
             "#A0DFFF",
             "#71F2C3",
@@ -77,7 +77,7 @@
         "widget.shadow": null,
         "selection.background": "#007EFF",
         "errorForeground": "#FF1A72",
-        "button.background": "#363a46",
+        "button.background": "#FFFFFF12",
         "button.foreground": "#F8F8F2",
         "button.hoverBackground": "#007EFF",
         "dropdown.background": "#2A2D35",
@@ -103,7 +103,7 @@
         "progressBar.background": "#007EFF",
         "list.activeSelectionBackground": "#007EFF",
         "list.activeSelectionForeground": "#F8F8F2",
-        "list.dropBackground": "#363a46",
+        "list.dropBackground": "#FFFFFF12",
         "list.focusBackground": "#FFFFFF15",
         "list.highlightForeground": "#A0DFFF",
         "list.hoverBackground": "#FFFFFF15",
@@ -144,9 +144,10 @@
         "editor.foreground": "#F8F8F2",
         "editor.background": "#1F2228",
         "editorLineNumber.foreground": "#424450",
-        "editorCursor.foreground": null,
-        "editor.selectionBackground": "#363a46",
-        "editor.selectionHighlightBackground": "#424450",
+        "editorCursor.foreground": "#FFFFFF",
+        "editor.selectionBackground": "#FFFFFF12",
+        "editor.selectionHighlightBackground": "#1F2228",
+        "editor.selectionHighlightBorder": "#007EFF90",
         "editor.inactiveSelectionBackground": null,
         "editor.wordHighlightBackground": "#A0DFFF50",
         "editor.wordHighlightStrongBackground": "#71F2C350",
@@ -154,7 +155,7 @@
         "editor.findMatchHighlightBackground": "#FFFFFF40",
         "editor.findRangeHighlightBackground": "#FFFFFF15",
         "editor.hoverHighlightBackground": "#191A21",
-        "editor.lineHighlightBackground": "#FFFFFF10",
+        "editor.lineHighlightBackground": "#FFFFFF06",
         "editor.lineHighlightBorder": null,
         "editorLink.activeForeground": "#A0DFFF",
         "editor.rangeHighlightBackground": "#007EFF15",
@@ -200,7 +201,7 @@
         "editorSuggestWidget.border": null,
         "editorSuggestWidget.foreground": "#F8F8F2",
         "editorSuggestWidget.highlightForeground": null,
-        "editorSuggestWidget.selectedBackground": "#363a46",
+        "editorSuggestWidget.selectedBackground": "#FFFFFF12",
         "editorHoverWidget.background": "#1F2228",
         "editorHoverWidget.border": "#D8E4FC75",
         "debugExceptionWidget.background": null,
@@ -208,7 +209,7 @@
         "editorMarkerNavigation.background": "#2A2D35",
         "editorMarkerNavigationError.background": null,
         "editorMarkerNavigationWarning.background": null,
-        "peekView.border": "#363a46",
+        "peekView.border": "#FFFFFF12",
         "peekViewEditor.background": "#1F2228",
         "peekViewEditorGutter.background": null,
         "peekViewEditor.matchHighlightBackground": "#FFF6B280",
@@ -216,7 +217,7 @@
         "peekViewResult.fileForeground": "#F8F8F2",
         "peekViewResult.lineForeground": "#F8F8F2",
         "peekViewResult.matchHighlightBackground": "#FFF6B280",
-        "peekViewResult.selectionBackground": "#363a46",
+        "peekViewResult.selectionBackground": "#FFFFFF12",
         "peekViewResult.selectionForeground": "#F8F8F2",
         "peekViewTitle.background": "#191A21",
         "peekViewTitleDescription.foreground": "#D8E4FC75",
@@ -250,7 +251,7 @@
         "titleBar.inactiveForeground": "#D8E4FC75",
         "notification.background": "#1F2228",
         "notification.foreground": "#F8F8F2",
-        "notification.buttonBackground": "#363a46",
+        "notification.buttonBackground": "#FFFFFF12",
         "notification.buttonForeground": "#F8F8F2",
         "notification.buttonHoverBackground": "#FFFFFF15",
         "notification.errorBackground": "#FF1A72",
@@ -636,7 +637,9 @@
         {
             "name": "HTML tags",
             "scope": [
-                "entity.name.tag"
+                "entity.name.tag",
+                "punctuation.definition.tag.begin.html",
+                "punctuation.definition.tag.end.html"
             ],
             "settings": {
                 "foreground": "#FF87BF"
@@ -658,7 +661,7 @@
             ],
             "settings": {
                 "foreground": "#71F2C3",
-                "fontStyle": "italic"
+                "fontStyle": "normal"
             }
         },
         {
@@ -748,7 +751,7 @@
                 "support"
             ],
             "settings": {
-                "fontStyle": "italic",
+                "fontStyle": "normal",
                 "foreground": "#A0DFFF"
             }
         },
@@ -760,7 +763,7 @@
                 "variable.other.predefined"
             ],
             "settings": {
-                "fontStyle": "regular",
+                "fontStyle": "normal",
                 "foreground": "#B59DDB"
             }
         },
@@ -771,7 +774,7 @@
                 "support.type.property-name"
             ],
             "settings": {
-                "fontStyle": "regular"
+                "fontStyle": "normal"
             }
         },
         {
@@ -890,7 +893,7 @@
                 "source.groovy storage.type.def"
             ],
             "settings": {
-                "fontStyle": "regular",
+                "fontStyle": "normal",
                 "foreground": "#FF87BF"
             }
         },
@@ -1117,8 +1120,6 @@
                 "storage.modifier.import",
                 "punctuation.section.embedded.begin.tsx",
                 "punctuation.section.embedded.end.tsx",
-                "punctuation.section.embedded.begin.jsx",
-                "punctuation.section.embedded.end.jsx",
                 "punctuation.separator.list.comma.css",
                 "constant.language.empty-list.haskell"
             ],
@@ -1180,6 +1181,27 @@
             ],
             "settings": {
                 "foreground": "#D8E4FC75"
+            }
+        },
+        {
+            "name": "Edge cases (foreground color resets)",
+            "scope": [
+                "punctuation.section.embedded.begin.jsx",
+                "punctuation.section.embedded.end.jsx"
+            ],
+            "settings": {
+                "foreground": "#F8F8F2"
+            }
+        },
+        {
+            "name": "html",
+            "scope": [
+                "support.class.component.open.jsx",
+                "support.class.component.close.jsx",
+                "meta.tag.jsx"
+            ],
+            "settings": {
+                "foreground": "#FF87BF"
             }
         }
     ]

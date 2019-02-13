@@ -5,7 +5,7 @@ plane:
   base:
     - &BG        '#1F2228'
     - &FG        '#F8F8F2'
-    - &SELECTION '#363a46'
+    - &SELECTION '#FFFFFF12'
     - &COMMENT   '#D8E4FC75'
     - &CYAN      '#A0DFFF'
     - &GREEN     '#71F2C3'
@@ -170,10 +170,11 @@ colors:
   editor.foreground: *FG
   editor.background: *BG
   editorLineNumber.foreground: *BGLighter
-  editorCursor.foreground:
+  editorCursor.foreground: *WHITE
 
   editor.selectionBackground: *SELECTION                                        # Color of the editor selection
-  editor.selectionHighlightBackground: *BGLighter                               # Color for regions with the same content as the selection
+  editor.selectionHighlightBackground:  *BG                                     # Color for regions with the same content as the selection
+  editor.selectionHighlightBorder: !alpha [ *BGSELECT, 90 ]                     # Color for regions with the same content as the selection  border
   editor.inactiveSelectionBackground:                                           # Color of the selection in an inactive editor
 
   editor.wordHighlightBackground: !alpha [ *CYAN, 50 ]                          # Background color of a symbol during read-access, for example when reading a variable
@@ -185,7 +186,7 @@ colors:
 
   editor.hoverHighlightBackground: *BGDarker                                    # Highlight below the word for which a hover is shown
 
-  editor.lineHighlightBackground: !alpha [ *WHITE, 10 ]                         # Background color for the highlight of line at the cursor position
+  editor.lineHighlightBackground: !alpha [ *WHITE, 6 ]                         # Background color for the highlight of line at the cursor position
   editor.lineHighlightBorder:                                                   # Background color for the border around the line at the cursor position
 
   editorLink.activeForeground: *CYAN                                            # Color of active links
@@ -623,6 +624,8 @@ tokenColors:
   - name: HTML tags
     scope:
     - entity.name.tag
+    - punctuation.definition.tag.begin.html
+    - punctuation.definition.tag.end.html
     settings:
       foreground: *PINK
 
@@ -637,7 +640,7 @@ tokenColors:
     - entity.other.attribute-name
     settings:
       foreground: *GREEN
-      fontStyle: italic
+      fontStyle: normal
 
 # =============================================================================
 # Functions/Methods
@@ -715,7 +718,7 @@ tokenColors:
     scope:
     - support
     settings:
-      fontStyle: italic
+      fontStyle: normal
       foreground: *CYAN
 
   - name: Built-in magic functions and constants
@@ -724,7 +727,7 @@ tokenColors:
     - support.variable
     - variable.other.predefined
     settings:
-      fontStyle: regular
+      fontStyle: normal
       foreground: *PURPLE
 
   - name: Built-in functions / properties
@@ -732,7 +735,7 @@ tokenColors:
     - support.function
     - support.type.property-name
     settings:
-      fontStyle: regular
+      fontStyle: normal
 
 # =============================================================================
 # Punctuation
@@ -842,7 +845,7 @@ tokenColors:
     - meta.interface-or-protocol storage.type.objc
     - source.groovy storage.type.def
     settings:
-      fontStyle: regular
+      fontStyle: normal
       foreground: *PINK
 
   - name: Types
@@ -1035,8 +1038,6 @@ tokenColors:
     - storage.modifier.import                                       # Java / Groovy imports
     - punctuation.section.embedded.begin.tsx
     - punctuation.section.embedded.end.tsx
-    - punctuation.section.embedded.begin.jsx
-    - punctuation.section.embedded.end.jsx
     - punctuation.separator.list.comma.css                          # Commas separating selectors in CSS
     - constant.language.empty-list.haskell
     settings:
@@ -1081,3 +1082,25 @@ tokenColors:
       - meta.preprocessor.haskell
     settings:
       foreground: *COMMENT
+
+  # JSX
+  # =======
+
+  # Edge Cases
+  # ==========
+  - name: Edge cases (foreground color resets)
+    scope:
+    - punctuation.section.embedded.begin.jsx
+    - punctuation.section.embedded.end.jsx
+    settings:
+      foreground: *FG
+
+  # html
+  # ==========
+  - name: html
+    scope:
+    - support.class.component.open.jsx
+    - support.class.component.close.jsx
+    - meta.tag.jsx
+    settings:
+      foreground: *PINK

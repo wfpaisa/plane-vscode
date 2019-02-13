@@ -14,7 +14,11 @@ if (!fs.existsSync(THEME_DIR)) {
 const withAlphaType = new yaml.Type('!alpha', {
     kind: 'sequence',
     construct: data => {
-        return data[0] + data[1];
+        if(data[1]<10){
+            return `${data[0]}0${data[1]}`;
+        }else{
+            return `${data[0]}${data[1]}`;
+        }
     },
     represent: data => {
         return [data[0], data[1]];
