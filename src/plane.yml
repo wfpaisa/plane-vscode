@@ -193,8 +193,8 @@ colors:
   editor.rangeHighlightBackground: !alpha [ *BGSELECT, 15 ]                     # Background color of highlighted ranges, like by Quick Open and Find features
 
   editorWhitespace.foreground: *NonText                                         # Color of whitespace characters in the editor
-  editorIndentGuide.background: *NonText                                        # Color of the editor indentation guides
-  editorIndentGuide.activeBackground: !alpha [ *WHITE, 45]                      # Color of the active indentation guide
+  editorIndentGuide.background: !alpha [ *WHITE, 10]                            # Color of the editor indentation guides
+  editorIndentGuide.activeBackground: !alpha [ *WHITE, 28]                      # Color of the active indentation guide
   editorRuler.foreground: *NonText                                              # Color of the editor rulers
 
   editorCodeLens.foreground: *COMMENT                                           # Foreground color of an editor CodeLens
