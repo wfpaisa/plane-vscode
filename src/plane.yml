@@ -293,7 +293,7 @@ colors:
   panelTitle.inactiveForeground: *COMMENT                                       # Title color for the inactive panel
 
   # Status Bar Colors
-  statusBar.background: *BGDarker                                               # Standard Status Bar background color
+  statusBar.background: *BGLight                                               # Standard Status Bar background color
   statusBar.foreground: *FG                                                     # Status Bar foreground color
   statusBar.debuggingBackground: *RED                                           # Status Bar background color when a program is being debugged
   statusBar.debuggingForeground: *BGDarker                                      # Status Bar foreground color when a program is being debugged
@@ -303,12 +303,12 @@ colors:
   statusBarItem.hoverBackground:                                                # Status Bar item background color when hovering
   statusBarItem.prominentBackground: *RED                                       # Status Bar prominent items background color. Prominent items stand out from other Status Bar entries to indicate importance
   statusBarItem.prominentHoverBackground: *ORANGE                               # Status Bar prominent items background color when hovering. Prominent items stand out from other Status Bar entries to indicate importance
-  statusBar.border:
+  statusBar.border: *BGLight
 
   # Title Bar Colors (MacOS Only)
-  titleBar.activeBackground: *BGDark                                            # Title Bar background when the window is active
-  titleBar.activeForeground: *FG                                                # Title Bar foreground when the window is active
-  titleBar.inactiveBackground: *BGDarker                                        # Title Bar background when the window is inactive
+  titleBar.activeBackground: *BGLight                                            # Title Bar background when the window is active
+  titleBar.activeForeground: *WHITE                                                # Title Bar foreground when the window is active
+  titleBar.inactiveBackground: *BGLight                                        # Title Bar background when the window is inactive
   titleBar.inactiveForeground: *COMMENT                                         # Title Bar foreground when the window is inactive
 
   # Notification Dialog Colors
