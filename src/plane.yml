@@ -1101,7 +1101,7 @@ tokenColors:
     # - keyword.control.at-rule.media.css
     # - keyword.operator.logical.and.media.css
     settings:
-      foreground: *CYAN
+      foreground: *PINK
 
   # CSS
   # ==========
