@@ -15,7 +15,7 @@ plane:
     - &RED       '#FF1A72'
     - &YELLOW    '#FFF6B5'
   ansi:
-    - &COLOR0        '#2A2D35' # Black
+    - &COLOR0        '#2F333D' # Black
     - &COLOR1        '#FF84BD' # Red
     - &COLOR2        '#72F9C8' # Green
     - &COLOR3        '#FFF6B5' # Yellow
@@ -43,8 +43,8 @@ plane:
     - &TAB_DROP_BG   '#44475A70'
     # UI Variants
     - &BGLighter     '#424450'
-    - &BGLight       '#2A2D35' # Active bar
-    - &BGDark        '#2A2D35' # Interface
+    - &BGLight       '#2F333D' # Active bar
+    - &BGDark        '#2F333D' # Interface
     - &BGDarker      '#191A21' # 
     - &BGSELECT      '#007EFF' # Blue select
 
