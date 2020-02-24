@@ -55,7 +55,7 @@
 		"theme": "dark"
 	},
 	"devDependencies": {
-		"js-yaml": "^3.12.0",
+		"js-yaml": "^3.13.1",
 		"tinycolor2": "^1.4.1"
 	}
 }
