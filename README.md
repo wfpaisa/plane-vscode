@@ -1,8 +1,3 @@
-<p align="center">
-<img src="assets/logo.svg" />
-</p>
-
-
 # PLANE-VSCODE THEME
 
 A beautiful theme for Visual Code, more information in [Plane project](https://github.com/wfpaisa/plane)
@@ -14,15 +9,16 @@ A beautiful theme for Visual Code, more information in [Plane project](https://g
 </p>
 
 ## Install
+
 1. Download in `~/.vscode/extensions/plane`
 2. Open: Visual Studio Code -> `Ctrl + Shift + P` -> Reload window.
-3. Open: Visual Studio Code -> Settings -> Color Theme  choose Plane
+3. Open: Visual Studio Code -> Settings -> Color Theme choose Plane
 
 ## Build
+
 - `npm i`
 - `npm run attach`
 - `npm run build`
-
 
 ## License
 

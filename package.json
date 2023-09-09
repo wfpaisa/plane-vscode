@@ -1,61 +1,40 @@
 {
-	"name": "plane-vscode",
-	"version": "1.0.0",
-	"displayName": "Plane Theme",
-	"homepage": "https://github.com/wfpaisa/plane-vscode",
-	"description": "Plane Theme for Visual Studio Code",
-	"publisher": "wfpaisa",
-	"license": "MIT",
-	"scripts": {
-		"attach": "./bootstrap.sh attach",
-		"build": "node ./build.js",
-		"eject": "./bootstrap.sh eject",
-		"package": "vsce package -o ./bin/plane.vsix",
-		"vscode:prepublish": "npm run build"
-	},
-	"maintainers": [
-		"wfpaisa <wfpaisa@gmail.com>"
-	],
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/wfpaisa/plane-vscode.git"
-	},
-	"bugs": {
-		"url": "https://github.com/wfpaisa/plane-vscode/issues"
-	},
-	"engines": {
-		"vscode": "^1.13.0"
-	},
-	"categories": [
-		"Themes"
-	],
-	"contributes": {
-		"themes": [
-			{
-				"label": "Plane",
-				"uiTheme": "vs-dark",
-				"path": "./theme/plane.json"
-			},
-			{
-				"label": "Plane Light",
-				"uiTheme": "vs-light",
-				"path": "./theme/plane-light.json"
-			}
-		]
-	},
-	"keywords": [
-		"plane",
-		"dark",
-		"theme",
-		"color-theme"
-	],
-	"icon": "icon.png",
-	"galleryBanner": {
-		"color": "#2F333D",
-		"theme": "dark"
-	},
-	"devDependencies": {
-		"js-yaml": "^3.13.1",
-		"tinycolor2": "^1.4.1"
-	}
+  "name": "plane-theme",
+  "displayName": "Plane",
+  "description": "Plane color theme",
+  "homepage": "https://github.com/wfpaisa/plane-vscode",
+  "version": "0.0.1",
+  "publisher": "wfpaisa",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Plane Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/plane-dark.json"
+      },
+      {
+        "label": "Plane Dark old",
+        "uiTheme": "vs-dark",
+        "path": "./themes/plane-dark-old.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wfpaisa/plane-vscode.git"
+  },
+  "keywords": [
+    "plane",
+    "dark",
+    "theme",
+    "color-theme"
+  ],
+  "icon": "icon.png"
 }

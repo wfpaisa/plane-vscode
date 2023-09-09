@@ -1,5 +1,2 @@
 node_modules
-src/tests
-bin
-*.sublime-project
-*.sublime-workspace
+*.vsix

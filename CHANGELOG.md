@@ -1,13 +1,9 @@
-# Changelog
+# Change Log
 
+All notable changes to the "plane-dark" extension will be documented in this file.
 
-## 1.1
+Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-- Fix colors
+## [Unreleased]
 
----
-
-## 1.0
-
-- Add theme
-
+- Initial release
