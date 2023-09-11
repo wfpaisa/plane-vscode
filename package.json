@@ -1,40 +1,51 @@
 {
-  "name": "plane-theme",
-  "displayName": "Plane",
-  "description": "Plane color theme",
-  "homepage": "https://github.com/wfpaisa/plane-vscode",
-  "version": "0.0.1",
-  "publisher": "wfpaisa",
-  "license": "MIT",
-  "engines": {
-    "vscode": "^1.80.0"
-  },
-  "categories": [
-    "Themes"
-  ],
-  "contributes": {
-    "themes": [
-      {
-        "label": "Plane Dark",
-        "uiTheme": "vs-dark",
-        "path": "./themes/plane-dark.json"
-      },
-      {
-        "label": "Plane Dark old",
-        "uiTheme": "vs-dark",
-        "path": "./themes/plane-dark-old.json"
-      }
-    ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/wfpaisa/plane-vscode.git"
-  },
-  "keywords": [
-    "plane",
-    "dark",
-    "theme",
-    "color-theme"
-  ],
-  "icon": "icon.png"
+	"name": "plane-theme",
+	"displayName": "Plane",
+	"description": "Plane color theme",
+	"homepage": "https://github.com/wfpaisa/plane-vscode",
+	"version": "0.0.1",
+	"publisher": "Planetheme",
+	"license": "MIT",
+	"engines": {
+		"vscode": "^1.80.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Plane Dark",
+				"uiTheme": "vs-dark",
+				"path": "./themes/plane-dark.json"
+			},
+			{
+				"label": "Plane Dark old",
+				"uiTheme": "vs-dark",
+				"path": "./themes/plane-dark-old.json"
+			}
+		]
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/wfpaisa/plane-vscode.git"
+	},
+	"keywords": [
+		"plane",
+		"dark",
+		"theme",
+		"color-theme"
+	],
+	"icon": "icon.png",
+	"__metadata": {
+		"id": "da04c422-4b8f-41c9-afcc-c3363320c2d8",
+		"publisherId": "61f186f1-11d3-42b7-a99a-e6769e0e91ef",
+		"publisherDisplayName": "Plane theme",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": true,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1694393515755,
+		"preRelease": false
+	}
 }
