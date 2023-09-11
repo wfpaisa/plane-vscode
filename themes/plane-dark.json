@@ -145,7 +145,7 @@
 		"debugTokenExpression.number": "#b5cea8",
 		"debugTokenExpression.string": "#ce9178",
 		"debugTokenExpression.value": "#cccccc99",
-		"debugToolBar.background": "#333333",
+		"debugToolBar.background": "#2f3346",
 		//"debugToolBar.border": null,
 		"debugView.exceptionLabelBackground": "#6c2022",
 		"debugView.exceptionLabelForeground": "#cccccc",
