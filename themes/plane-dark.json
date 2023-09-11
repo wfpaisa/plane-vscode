@@ -726,7 +726,7 @@
 
 		"statusBar.background": "#1D212F",
 		// "statusBar.border": "#2F3346",
-		"statusBar.debuggingBackground": "#FF9A78",
+		"statusBar.debuggingBackground": "#ff9a782a",
 		//"statusBar.debuggingBorder": null,
 		"statusBar.debuggingForeground": "#E6E8EF",
 		"statusBar.focusBorder": "#E6E8EF",
