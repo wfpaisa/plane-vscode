@@ -291,7 +291,7 @@
     "editorOverviewRuler.commentForeground": "#37373d",
     "editorOverviewRuler.commentUnresolvedForeground": "#37373d",
     "editorOverviewRuler.commonContentForeground": "#60606066",
-    "editorOverviewRuler.currentContentForeground": "#40c8ae80",
+    "editorOverviewRuler.currentContentForeground": "#36d4c738",
     "editorOverviewRuler.deletedForeground": "#F3A0BC99",
     "editorOverviewRuler.errorForeground": "#FF1A72b3",
     "editorOverviewRuler.findMatchForeground": "#FF9A787e",
@@ -503,9 +503,9 @@
     "merge.commonContentBackground": "#60606029",
     "merge.commonHeaderBackground": "#60606066",
     "merge.currentContentBackground": "#40c8ae33",
-    "merge.currentHeaderBackground": "#40c8ae80",
-    "merge.incomingContentBackground": "#40a6ff33",
-    "merge.incomingHeaderBackground": "#40a6ff80",
+    "merge.currentHeaderBackground": "#36d4c738",
+    "merge.incomingContentBackground": "#40a6ff20",
+    "merge.incomingHeaderBackground": "#40a6ff46",
     "mergeEditor.change.background": "#9bb95533",
     "mergeEditor.change.word.background": "#9ccc2c33",
     "mergeEditor.changeBase.background": "#4b1818",
@@ -515,8 +515,8 @@
     "mergeEditor.conflict.handledUnfocused.border": "#86868649",
     "mergeEditor.conflict.input1.background": "#40c8ae33",
     "mergeEditor.conflict.input2.background": "#40a6ff33",
-    "mergeEditor.conflict.unhandled.minimapOverViewRuler": "#fcba03",
-    "mergeEditor.conflict.unhandledFocused.border": "#ffa600",
+    "mergeEditor.conflict.unhandled.minimapOverViewRuler": "#fff6b557",
+    "mergeEditor.conflict.unhandledFocused.border": "#fff6b557",
     "mergeEditor.conflict.unhandledUnfocused.border": "#ffa6007a",
     "mergeEditor.conflictingLines.background": "#ffea0047",
     //
@@ -779,7 +779,7 @@
     "terminal.ansiBlue": "#8EDFFF",
     "terminal.ansiBrightBlack": "#9A9A9A",
     "terminal.ansiBrightBlue": "#2990FA",
-    "terminal.ansiBrightCyan": "#00ffff",
+    "terminal.ansiBrightCyan": "#8EDFFF", //00ffff
     "terminal.ansiBrightGreen": "#36d4c7",
     "terminal.ansiBrightMagenta": "#9461FD",
     "terminal.ansiBrightRed": "#FF1A72",
@@ -1138,7 +1138,7 @@
     {
       "scope": "keyword.control",
       "settings": {
-        "foreground": "#f3a0bc",
+        "foreground": "#b486ff",
         "fontStyle": "italic"
       }
     },
