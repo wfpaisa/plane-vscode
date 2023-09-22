@@ -682,7 +682,7 @@
     //
     "sideBar.background": "#1d212f",
     "sideBar.border": "#2d3143",
-    "sideBar.dropBackground": "#53595d80",
+    "sideBar.dropBackground": "#0080FF69",
     //"sideBar.foreground": null,
     "sideBarSectionHeader.background": "#2d3143",
     "sideBarSectionHeader.border": "#1D212F",
