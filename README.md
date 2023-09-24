@@ -2,8 +2,8 @@
 
 A beautiful theme for Visual Code, more information in [Plane project](https://github.com/wfpaisa/plane)
 
-<p align="center">
-<img src="assets/screenshots/screenshot-01.png" />
+<p style="text-align=center">
+<img src="assets/screenshots/screenshot-01.png" widht="400" />
 </p>
 <p align="center">
 <img src="assets/screenshots/screenshot-03.png" />
