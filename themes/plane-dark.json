@@ -350,12 +350,12 @@
     "extensionButton.separator": "#E6E8EF66",
     "extensionIcon.preReleaseForeground": "#22DDCE",
     "extensionIcon.sponsorForeground": "#d758b3",
-    "extensionIcon.starForeground": "#ff8e00",
+    "extensionIcon.starForeground": "#FF9A78",
     "extensionIcon.verifiedForeground": "#226DFF",
     //
     //
     "gitDecoration.addedResourceForeground": "#22DDCE",
-    "gitDecoration.conflictingResourceForeground": "#e4676b",
+    "gitDecoration.conflictingResourceForeground": "#FF9A78",
     "gitDecoration.deletedResourceForeground": "#FF1A72",
     "gitDecoration.ignoredResourceForeground": "#8c8c8c",
     "gitDecoration.modifiedResourceForeground": "#FFF6B5",
