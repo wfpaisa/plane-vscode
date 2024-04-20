@@ -10,7 +10,7 @@
     "purple": "#A99CFA",
   },
   "colors": {
-    "focusBorder": "#a8d2fe49",
+    "focusBorder": "#226DFF",
     "foreground": "#E6E8EF",
     //
     //
@@ -78,14 +78,14 @@
     "checkbox.selectBorder": "#226DFF",
     //
     //
-    "commandCenter.activeBackground": "#0535e314",
+    "commandCenter.activeBackground": "#00000014",
     "commandCenter.activeBorder": "#cccccc4d",
     "commandCenter.activeForeground": "#cccccc",
-    "commandCenter.background": "#2143c10d",
-    "commandCenter.border": "#cccccc33",
+    "commandCenter.background": "#0000000d",
+    "commandCenter.border": "#282828",
     "commandCenter.foreground": "#cccccc",
-    "commandCenter.inactiveBorder": "#cccccc26",
-    "commandCenter.inactiveForeground": "#cccccc99",
+    "commandCenter.inactiveBorder": "#282828",
+    "commandCenter.inactiveForeground": "#ffffff3b",
     //
     //
     "commentsView.resolvedIcon": "#cccccc80",
@@ -478,8 +478,8 @@
     //"list.focusForeground": null,
     "list.focusHighlightForeground": "#00D0FF",
     "list.highlightForeground": "#00D0FF",
-    "list.focusOutline": "#1E3E5E",
-    "list.hoverBackground": "#1E3E5E",
+    "list.focusOutline": "#226DFF",
+    "list.hoverBackground": "#ffffff15",
     //"list.hoverForeground": null,
     //"list.inactiveFocusBackground": null,
     //"list.inactiveFocusOutline": null,
