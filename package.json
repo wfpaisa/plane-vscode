@@ -20,6 +20,11 @@
 				"path": "./themes/plane-dark.json"
 			},
 			{
+				"label": "Plane Dark Gtk",
+				"uiTheme": "vs-dark",
+				"path": "./themes/plane-dark-gtk.json"
+			},
+			{
 				"label": "Plane Dark old",
 				"uiTheme": "vs-dark",
 				"path": "./themes/plane-dark-old.json"
