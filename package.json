@@ -3,7 +3,7 @@
 	"displayName": "Plane",
 	"description": "Plane color theme",
 	"homepage": "https://github.com/wfpaisa/plane-vscode",
-	"version": "2.6.0",
+	"version": "2.8.0",
 	"publisher": "Planetheme",
 	"license": "MIT",
 	"engines": {
