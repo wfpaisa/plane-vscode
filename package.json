@@ -29,6 +29,18 @@
 				"uiTheme": "vs-dark",
 				"path": "./themes/plane-dark-old.json"
 			}
+		],
+		"iconThemes": [
+			{
+				"id": "plane.icon",
+				"label": "Plane",
+				"path": "theme/plane-icon-theme.json"
+			},
+			{
+				"id": "plane.icon.minimal",
+				"label": "Plane (minimal)",
+				"path": "theme/plane-icon-minimal-theme.json"
+			}
 		]
 	},
 	"repository": {
