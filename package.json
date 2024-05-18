@@ -34,12 +34,12 @@
 			{
 				"id": "plane.icon",
 				"label": "Plane",
-				"path": "theme/plane-icon-theme.json"
+				"path": "./themes/plane-icon-theme.json"
 			},
 			{
 				"id": "plane.icon.minimal",
 				"label": "Plane (minimal)",
-				"path": "theme/plane-icon-minimal-theme.json"
+				"path": "./themes/plane-icon-minimal-theme.json"
 			}
 		]
 	},
