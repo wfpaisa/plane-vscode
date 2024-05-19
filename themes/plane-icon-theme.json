@@ -56,10 +56,10 @@
       "iconPath": "icons/light/ts.svg"
     },
     "_css_dark": {
-      "iconPath": "icons/dark/css.svg"
+      "iconPath": "icons/dark/braces.svg"
     },
     "_css_light": {
-      "iconPath": "icons/light/css.svg"
+      "iconPath": "icons/light/braces.svg"
     },
     "_html_dark": {
       "iconPath": "icons/dark/html.svg"
