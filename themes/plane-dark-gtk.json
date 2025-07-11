@@ -199,7 +199,7 @@
     "editorBracketHighlight.foreground2": "#b486ff",
     "editorBracketHighlight.foreground3": "#6BD5FE",
     "editorBracketHighlight.foreground4": "#FFF1CC",
-    "editorBracketHighlight.foreground5": "#FF88AA",
+    "editorBracketHighlight.foreground5": "#888aff",
     "editorBracketHighlight.foreground6": "#00000000",
     "editorBracketHighlight.unexpectedBracket.foreground": "#fb0047",
     "editorBracketMatch.border": "#fdf90027", // resalta brackets, pongo transparente el borde
